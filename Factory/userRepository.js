@@ -1,25 +1,22 @@
-var repo = function () {
+let repo = function () {
 
-    var db = {};
+    let db = {};
 
-    var get = function (id) {
+    let get = function (id) {
         console.log('Getting user ' + id);
         return {
             name: 'Jon Mills'
         }
     }
 
-    var save = function (user) {
+    let save = function (user) {
         console.log('Saving ' + user.name + ' to the db');
     }
-    
-    
+
     return {
         get: get,
         save: save
     }
-
-
 }
 
-module.exports = repo;
+module.exports = repo();
