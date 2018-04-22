@@ -11,6 +11,6 @@ let repoFactory = function () {
     repoList.forEach(repo => {
         repos[repo.name] = require(repo.source);
     });
-}
+};
 
 module.exports = new repoFactory;

@@ -6,6 +6,6 @@ let taskHandler = function() {
             myRepo.save("From taskHandler");
         }
     }
-}
+};
 
 module.exports = new taskHandler;

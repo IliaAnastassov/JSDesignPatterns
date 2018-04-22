@@ -7,16 +7,16 @@ let repo = function () {
         return {
             name: 'New project'
         }
-    }
+    };
 
     let save = function (project) {
         console.log('Saving ' + project.name + ' to the db');
-    }
+    };
 
     return {
         get: get,
         save: save
     }
-}
+};
 
 module.exports = repo();
