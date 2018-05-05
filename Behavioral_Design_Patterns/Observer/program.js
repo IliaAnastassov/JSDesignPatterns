@@ -65,7 +65,7 @@ ObservableTask.prototype.addObserver = function (observer) {
 ObservableTask.prototype.notify = function (context) {
     for (let i = 0; i < this.observers.count(); i++) {
         // execute the observer function
-        let observer = this.observers.get(i)(context);
+        this.observers.get(i)(context);
     }
 };
 ObservableTask.prototype.removeObserver = function (observer) {
